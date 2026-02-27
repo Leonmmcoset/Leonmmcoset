@@ -52,13 +52,3 @@
 ```
 
     
-
----
-
-![](./4-productive-time.svg)
-
-```
-![](https://raw.githubusercontent.com/Leonmmcoset/Leonmmcoset/main/profile-summary-card-output/nord_bright/4-productive-time.svg)
-```
-
-    
