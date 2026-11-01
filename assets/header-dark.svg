@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
+  <title id="title">Hi, I'm LeonMMcoset</title>
+  <desc id="description">C and Python. A blue and purple banner with a terminal illustration.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111923"/>
+      <stop offset="1" stop-color="#1e192e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8dbbff"/>
+      <stop offset="1" stop-color="#b58cde"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#25354e"/>
+      <stop offset="1" stop-color="#39294d"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="958" height="246" rx="24" fill="url(#background)" stroke="#303446"/>
+  <path d="M698 1H935A24 24 0 0 1 959 25V223A24 24 0 0 1 935 247H698Z" fill="#343052" opacity=".2"/>
+  <path d="M698 44V204" stroke="#353249"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <circle cx="57" cy="55" r="4" fill="#b797e1"/>
+    <text x="72" y="60" fill="#a4aec5" font-size="13" font-weight="600" letter-spacing="2.5">HELLO, I'M</text>
+    <text x="52" y="126" fill="#eef2ff" font-size="56" font-weight="700" letter-spacing="-1.8">LeonMMcoset</text>
+    <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="26" fill="#c2d2ff" text-anchor="middle">
+      <rect x="54" y="156" width="64" height="42" rx="10" fill="#1a2435" stroke="#35425c"/>
+      <text x="86" y="186">C</text>
+      <rect x="130" y="156" width="142" height="42" rx="10" fill="#1a2435" stroke="#35425c"/>
+      <text x="201" y="186">Python</text>
+    </g>
+  </g>
+  <g transform="translate(752 58)">
+    <rect x="15" y="-2" width="126" height="126" rx="24" transform="rotate(12 78 61)" fill="#24213b" stroke="#514164"/>
+    <rect y="12" width="126" height="126" rx="24" fill="url(#terminal)" stroke="url(#accent)" stroke-width="1.5"/>
+    <path d="M35 54L55 70L35 86M68 91H91" fill="none" stroke="#c5b2ed" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-19" cy="123" r="4" fill="#7298d4"/>
+    <path d="M149 28H159M154 23V33" stroke="#9d7bbd" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

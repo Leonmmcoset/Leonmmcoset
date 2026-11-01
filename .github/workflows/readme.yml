@@ -1,33 +1,38 @@
 name: GitHub-Profile-Summary-Cards
 
 on:
-  create:
   push:
-  schedule: # execute every 24 hours
-    - cron: "* */24 * * *"
+    branches: [main]
+    paths:
+      - README.md
+      - assets/**
+      - .github/workflows/readme.yml
+  schedule:
+    - cron: "21 23 * * *" # 每天北京时间 07:21（UTC 前一天 23:21）
   workflow_dispatch:
+
+concurrency:
+  group: profile-summary-cards-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-cards
+    timeout-minutes: 15
     permissions:
-      contents: write # 保留write权限（需提交卡片文件），删除重复的contents: read
-      pull-requests: read # 保留read权限，避免请求API异常
-      
+      contents: write
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
+      - name: Check out profile
+        uses: actions/checkout@v6
+      - name: Generate summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # 增加超时配置，缓解request.js请求重试异常
-          REQUEST_TIMEOUT: 30000
         with:
-          USERNAME: Leonmmcoset # 同步你运行时的指定用户名，替换默认所有者
-          utc_offset: 8 # 北京时间UTC+8，保持不变
-          BRANCH_NAME: main # 同步你运行时的分支配置
-          AUTO_PUSH: true # 同步自动提交配置
-          # 新增参数，避免ProductiveTimeCard创建失败（兼容插件潜在bug）
-          EXCLUDE_CARDS: "ProductiveTimeCard"
-          # 增加请求重试次数，缓解request.js重试相关报错
-          MAX_RETRY: 3
+          USERNAME: Leonmmcoset
+          NAME: LeonMMcoset
+          UTC_OFFSET: 8
+          BRANCH_NAME: main
+          AUTO_PUSH: true
