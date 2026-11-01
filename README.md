@@ -6,8 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ReliefOSProject/ReliefOS"><strong>ReliefOS ↗</strong></a>
-  &nbsp;
+  <a href="https://github.com/ReliefOSProject/ReliefOS"><strong>ReliefOS ↗</strong></a><br>
   <a href="https://github.com/ReliefOSProject/ReliefOS/releases/latest"><img src="https://img.shields.io/github/v/release/ReliefOSProject/ReliefOS?style=flat&amp;label=release&amp;color=7c83d5" alt="Latest ReliefOS release"></a>
   <a href="https://github.com/ReliefOSProject/ReliefOS/actions/workflows/build-installer.yml?query=branch%3Amain"><img src="https://github.com/ReliefOSProject/ReliefOS/actions/workflows/build-installer.yml/badge.svg?branch=main" alt="ReliefOS build status on main"></a><br>
   <sub>An open-source operating system · <a href="https://reliefosproject.github.io/ReliefOS/">Website</a></sub>
